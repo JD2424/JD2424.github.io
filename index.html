@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalPortfolioWebpage</title>
+    <style>
+
+        body{
+            background-color:maroon; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: relative;
+            padding: auto;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+            display: flex; 
+            flex-direction: column;
+        }
+        #dachleiste{
+            background-color: #313131; 
+            border-style: inherit; 
+            margin: auto; 
+            padding: auto;
+            display: flex; 
+            flex-direction: row;
+            position: fixed; top: 0px; left: 0px; right: 0px;
+            z-index:5;
+        }
+            #textdach{
+                background-color: darkslategrey; border-style: none; border-radius: 2px; margin:20px auto 20px 40px; padding: 15px;
+                display:flex; flex-direction: row; justify-content: left;
+            }
+                #navbar{
+                background-color: none; border-style: none; padding:15px; 
+                display: flex; flex-direction: row; position:relative;
+            }
+                    #labelmenav{
+                        background-color: none; border-style:solid; border-width: thin; border-radius: 6px; margin:auto; padding: 15px;
+                    }
+                    #labelprojectsnav{
+                        background-color: none; border-style: solid; border-width: thin; border-radius: 6px; margin:auto; padding: 15px;
+                    }
+                    #labelfooternav{         
+                        background-color: none; border-style: solid; border-width: thin; border-radius: 6px; margin:auto; padding: 15px;
+                    }
+        #wlcm{
+            background-color: brown; 
+            border-bottom-style: none;
+            border-bottom-width: thin;
+            border-bottom-color: maroon;    
+            margin: 0em 0.5em 0em 0.5em;
+            max-width: 100%;
+        }
+            #welcome-section{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 6em;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            }
+        .main{
+            background-color:darkslategrey; 
+            border-style: none; 
+            margin: 0em 0.5em 0em 0.5em; 
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative; 
+            justify-content: space-around;
+            align-items: center;
+        }
+            #me{
+                background-color: brown; 
+                border-style: solid; 
+                border-width: auto; 
+                border-radius: 4px; 
+                border-color: maroon;
+                margin: 16em auto 16em auto;
+                padding: 1.5em;
+                width: 50rem;
+                max-width: 80%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+                .imageOne{ 
+                    display: grid;
+                    height: auto;
+                    max-width: 75%;
+                }
+                #imgOne{
+                    display: flex;
+                    justify-content: center;
+                    height: auto;
+                    max-width: 100%;
+                }
+                @media (max-width: 320px) {        
+                    #imageOne{
+                        max-width: 50%;
+                    } 
+                }
+            #myprojects{
+                background-color: darkslategrey; 
+                border-style: solid; 
+                border-width: auto; 
+                border-radius: 4px; 
+                border-color: maroon;
+                margin: 16em auto 16em auto;;
+                padding: 1.5em;
+                width: 50rem;
+                max-width: 80%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        footer{
+            background-color:#313131; 
+            border-style: none;
+            border-width: thin; 
+            padding: 2em; 
+            margin: 0;
+            width:auto;
+            display:flex; 
+            flex-direction: row; 
+            position:sticky;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .profilesfooter{
+                background-color: darkslategrey;
+                border-radius: 4px;
+                padding:0.5em;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                align-items: center;
+            }
+    </style>    
+</head>
+
+<body>
+
+    <section id="dachleiste">
+        <p id="textdach">JD2424</p>
+        <nav id="navbar">
+            <label id="labelmenav">
+            <a href="#me">That´s Me</a>
+            </label>
+            <label id="labelprojectsnav">
+            <a href="#projects">My Projecs</a>
+            </label>
+            <label id=labelfooternav>
+            <a href="#footer">Contact</a>
+            </label>
+        </nav>
+        </section>
+
+    <header id="wlcm">
+        <section id="welcome-section">
+            <h1 id="welcomeheader" style="font-size: 4rem;">Welcome...</h1>
+            <p id="welcometext" style="font-size: 2rem;">...to my <strong>p</strong>ersonal <strong>p</strong>ortfolio <strong>w</strong>ebpage</p>
+        </section>
+    </header>
+
+    <main id="main" class="main">
+        <section id="me">   
+            <h2><u>JD2424</u></h2>
+            <div id="imgOne">
+                <img src="https://cdn.pixabay.com/photo/2014/04/02/10/21/moustache-303571__340.png" class="imageOne">
+            </div>
+            <p>No Experience. No knwolegde. No Convention.</p>
+        </section>
+    </main>
+
+    <div id="main2" class="main" style="background-color: brown;">
+        <div id="myprojects">
+            <section id="projects">
+                <h2><u>My FCC-Projects</u></h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata </p>
+                <ul class="project-tile">
+                <li><a href="file:///C:/Users/JJ/Documents/Coding/FCC/TributePage/index.html" id="project-link" target="_blank" alt="Unsere Projekte können derzeit nicht angezeigt werden">Tribute-Page</a></li>
+                <li><a href="file:///C:/Users/JJ/Documents/Coding/FCC/SurveyForm/index.html" id="project-link" target="_blank" alt="Unsere Projekte können derzeit nicht angezeigt werden">Survey-Form</a></li>
+                <li><a href="file:///C:/Users/JJ/Documents/Coding/FCC/ProductLandingPage/index.html" id="project-link" target="_blank" alt="Unsere Projekte können derzeit nicht angezeigt werden">Product LandingPage</a></li>
+                <li><a href="file:///C:/Users/JJ/Documents/Coding/FCC/TechnicalDocumentationPage/index.html#Alt" id="project-link" target="_blank" alt="Unsere Projekte können derzeit nicht angezeigt werden">Technichal Documentation Page</a></li>
+                <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects" target="_blank" alt= "The Responsive Web Desing Projects by FCC are currently not available."> Responsive Web Desing Projects by FCC</a></li>
+                </ul>
+            </section>
+    
+            <section id="more">
+                <h2><u>Cosmoplus</u></h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata </p>
+                <ul class="project-tile">
+                <li><a href="" id="project-link" target="_blank" alt="Unsere Projekte können derzeit nicht angezeigt werden">Cosmoplus</a></li>
+                <li></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p id="impressum">Weitere Angaben (Impressum)</p>
+        <div class="profilesfooter">
+            <label></label>
+                <a href="https://github.com/JD2424" target="_blank" id="profile-link">Github-profile</a>
+            <label></label>
+                <a href="https://www.freecodecamp.org/JD2424" target="_blank" id="profile-linkfcc">FreeCodeCamp-profile</a>
+        </div>
+        <p id="copyright">Weitere Angaben (Copyright)</p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>     
+</body>
+</html>
