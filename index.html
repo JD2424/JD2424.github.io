@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0">
+        <title>MotiveQuest-Startpage</title>
+        <link rel="stylesheet" href="mqcss/mqstyles.css">
+        <link rel="manifest" href="manifest.json">
+        <script src="./mqjs/mqscript.js"></script>            
+    </head>
+    
+    <body>
+        <header>
+            <img src="MQLogo75.jpg">
+        </header>
+<hr>
+        <main>
+            <section name="welcome" id="welcome">
+                <div id="game-info-header">
+                    <h1>Willkommen zur Motive-Quest <br> im Marburger Südviertel</h1>
+                </div>
+            </section>
+        <section class="testphase">
+            <h1>Diese Website befindet sich noch im Aufbau</h1>
+            <p>Die Website ist noch in Entwicklung und besteht zu privaten Testzwecken. Die Motive-Quest ist aber bereits spielbar. Bei Fragen, Anmerkungen, Beschwerden und Verbesserungvorschlägen schreib mir gerne an: postfach@motive-quest.de</p>
+        
+        </section>
+
+            <div id="previewcaptureone" class="previewcapture">
+                <label for="previewone" id="previewlabel">
+                    <img src="UebersichtTeilEins.JPEG" id="previewone" class="preview" alt="Vorschaubild Bilderrätsel Teil 1"> Vorschau Teil 1
+                </label>
+            </div>
+            
+            <section name="getIn" id="getIn" class="textfieldTwo">
+                <div id="gameinfoOne" class="text">
+                    <p><span style="font-weight:bold;">Die Herausforderung:</span><br>Die Positionen der abgebildeten Motive müssen gefunden und die zugehörigen Fragen durch Informationen aus der Umgebung beantwortet werden. Erhalte in zwei Etappen die Zielkoordinaten und trage dich in die "Qestmaster-Liste" ein. - Viel Spaß!</p>
+                </div>
+            </section>
+
+            <section name="mapsec" id="mapsec">
+                <div id="maphead">
+                    <p class="mapText"><span style="font-weight:bold;">Das Spielfeld... :</span></p>
+                </div>
+                <label for="map" id="img-caption">
+                    <img src="Karte.png" id="map" alt="Abbildung Spielfeld">                            
+                </label>
+                <div id="maptext">
+                    <p class="mapText"> ...wird nördlich von der Wilhelmstraße, südlich von der Frankfurter Straße, im Westen von der Stresemannstraße und im Osten von der Gutenbergstraße begrenzt. 
+                        Beide Straßenseiten der Spielfeldgrenze gehören zum Suchfeld. Innerhalb des Suchfeldes können die Motive in jeder Straße zu finden sein. 
+                    </p>
+                </div>
+            </section>
+
+            <section id=gameplay class="textfieldTwo">
+                <div id="game-expl">
+                    <p><span style="font-weight: bold;">Spielablauf: </span>Das Bilderrätsel ist in zwei Etappen mit jeweils 9 Motiven aufgeteilt. Um den Zugang zum zweiten Teil zu erhalten, löse erst alle Rätsel des ersten Teils.
+                    <ol>
+                        <li>Finde die Positionen der abgebildeten Motive innerhalb des Spielfeldes.</li>    
+                        <li>Beantworte die zu den Motiven gehörenden Fragen mithilfe der Informationen die du in deiner Umgebung findest.<br> (Oft sind weitere Recherchen notwendig)</li>
+                        <li>Schreibe auf wozu du in den [Notizanweisungen] aufgefordert wirst.</li>
+                        <li>Nutze deine Notizen um das Abschlussrätsel der ersten Etappe zu lösen und erhalte so den Zugangscode für den zweiten Teil.</li>
+                        <li>Das Abschlussrätsel des Zweiten Teils verrät dir den Standort der MQM-Liste, in welche sich die "MotiveQuest-Master" eintragen können.</li>    
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div id="previewcapturetwo" class="previewcapture">
+                    <label for="previewtwo" id="previewlabeltwo">
+                        <img src="UebersichtTeilZwei.JPEG" id="previewtwo" class="preview" alt="Vorschaubild Bilderrätsel Teil 2"> Vorschau Teil 2
+                    </label>
+                </div>
+            </section >
+            <section id="frequentlyAskedAnswers" class="textfieldOne">    
+                <div id="clues" >
+                    <ul>
+                        <p>Allgemeine Hinweise (&#9855): 
+                            <!-- <li>&#9855 &#128246 </li> -->
+                            <li>Die Motive-Quest ist bis auf einen Anruf (übliche Gebühren) kostenfrei und die notwendigen Informationen sind im Internet (ohne Paywall) zugänglich.</li>    
+                            <li>Die Reihenfolge der Bilder hat keine Bedeutung.</li>
+                            <li>Die Motive sind immer von öffentlichem Grund aus zu erkennen.</li>
+                            <li>Gebäude müssen zur Beantwortung der Fragen <u>nicht</u> betreten, die Umgebung aber genau untersucht werden.</li>
+                            <li>Solltest du das Motiv nicht finden, kannst du dir im absoluten Notfall einen "Standorthinweis" geben lassen.</li>
+                            <li>Beachte: Manche Fragen und Notizanweisungen [in den eckigen Klammern] verraten Hinweise über den Standort des jeweiligen Motivs, oder geben Auskunft über die Länge der Lösung (X).</li>
+                        </p>
+                    </ul>
+                </div>        
+            </section>
+    <hr>
+            <section name="quest" id="questOne">
+                <div id="modal01" class="modal" >
+                    <span class="close" onclick="document.getElementById('modal01').style.display='none'">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <div class="modal-content">
+                      <div id="captionone" class="mcc"></div>
+                      <img id="img01" class="mcc">
+                      <div id="qhead" class="mcc"></div>
+                      <div id="captiontwo" class="mcc"></div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild1.JPEG" style="max-width:100%;cursor:pointer"  class="modal-image" alt="Motiv 1" id="Motiv1">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Welche Straßen treffen vor diesem Gebäude aufeinander? 
+                                <br>[Notiere die Anfangsbuchstaben: X.X.]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)" >
+                        <img src="Bild2.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 2">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wie viele Wohneinheiten hat das Gebäude anhand der angebrachten Klingeln? 
+                                <br>[Notiere die Anzahl der Klingeln]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild3.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 3">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wie viele Ahornbäume sind in diesem Straßenabschnitt (Von Straßenbeginn bis zur nächsten Querstraße) zu finden? 
+                                <br>[Notiere die Anzahl der Bäume - Sie sind an einer Hand abzählbar]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)" >
+                        <img src="Bild4.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 4">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wie viele Kameras <u>des abgebildeten Modells</u> kann man insgesamt an der Außenfassade des Gebäudes zählen?
+                                <br>[Notiere die Anzahl der Kameras: XX]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild5.21.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 5">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wann wird hier Mittagsschlaf gehalten?
+                                <br>[Notiere die Uhrzeit (HH - HH)]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild6.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 6">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wie hoch dürfen Autos, die durch diese Straße fahren wollen, maximal sein?
+                                <br>[Notiere die Höhe in Zentimetern(cm)]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild7.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 7">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wie oft kommt der Buchstabe 'K' auf der goldenen Tafel neben diesem Tor vor?
+                                <br>[Notiere die Anzahl]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild8.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 8">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wer spendete die Bäume, die in dieser Straße zu finden sind?
+                                <br>[Notiere den Namen]</p>
+                        </div>
+                    </div>    
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild9.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 9">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Nach wem ist die Straße benannt, in dem dieses Haus steht?
+                                <br>[Notiere den/die Vornamen]</p>
+                        </div>
+                    </div>   
+                </div> 
+                <p style="font-size: small; text-align: center;"> Tippe oder klicke ein Motiv an, um die jeweilige Frage und Notizanweisung zu erhalten</p>
+            </section>
+            <section class="hintsec">
+                <div>
+                    <button id="knopfone" type="button" class="hint" label="Standorthinweis" onclick="hintnowone()" target="_self">Standort-<br>hinweis</a>
+                </div>                    
+                <div class="hintadd" id="hintaddone">
+                        <label for="locationhintone">Wähle ein Motiv aus:</label>
+                        <select id="locationhintone" name="locationhint" onchange="showHintone()">
+                            <option value="----"  selected hidden>----</option>
+                            <option value="Motiv 1">Motiv 1</option>
+                            <option value="Motiv 2">Motiv 2</option>
+                            <option value="Motiv 3">Motiv 3</option>
+                            <option value="Motiv 4">Motiv 4</option>
+                            <option value="Motiv 5">Motiv 5</option>
+                            <option value="Motiv 6">Motiv 6</option>
+                            <option value="Motiv 7">Motiv 7</option>
+                            <option value="Motiv 8">Motiv 8</option>
+                            <option value="Motiv 9">Motiv 9</option>
+                        </select>
+                </div>
+                <div class="actualhint" id="actualhintone">
+                    <p id="hinthintone" class="textfieldTwo">
+                    </p>
+                </div>
+            </section>
+    <hr>
+            <section id="abschlussraetselteileins" class="textfieldTwo">
+                <h3>Abschlussrätsel Teil 1</h3>
+                <p>Gratulation! - du hast alle Motive gefunden und Fragen beantwortet.
+                <br> Dann müssen deine Notizen jetzt "übersetzt" werden. Gehe dazu wie folgt vor:</p>
+                <ol>
+                    <li>Kürze alle Vor- und Nachnamen die du notiert hast auf Ihre Anfangsbuchstaben.</li>
+                    <li>Ersetze jetzt alle Buchstaben in deinen Notizen mit ihrem Stellenwert im Alphabet (Bsp.: A=1, K=11, ...)</li>
+                    <li>Bilde nun die Quersumme aus allen in einer Antwort vorkommenden Zahlen. Sollte dein Ergebnis zweistellig sein, bilde die Quersumme aus deinem Ergebnis.</li>  
+                        <p> Beispiel:<br>1. Vorname, Nachname = V, N <br>
+                            2. V = 22, N = 14 <br>
+                            3. 22, 14 = <u>9</u></p>
+                    <li>Schreibe die erhaltenen Zahlen in der Motivreihenfolge in einer Zeile auf und bilde dreier Blöcke.</li>
+                </ol>
+                <p> - Übertrage nun die Blöcke entsprechend der angegebenen Reihenfolge von links nach rechts in das unten stehende Zahlenschloss.
+                    <br>- Sind deine Ziffern richtig, stehen auf beiden Seiten der Eingabe die gleichen Zeichen.
+                    <br>- Sind alle Zahlen richtig,  öffnet sich das Schloss und du erhälst den Zugang zum zweiten Teil.</p>
+            </section>
+
+            <section name="unlock" id="unlock" class="textfieldOne">
+                <form id="formone" name="formone">
+                    <div class="invisframe">
+                        <div class="levelone">
+                            <div class="best"></div> 
+                            <div class="leveltwo"></div> 
+                        </div>
+                        <div class="leveloneone" id="leveloneone">
+                                    
+                        </div>
+                        <div class="levelthree">
+                            <div class="levelfour">
+                                <label class="text" for="pwone" id="apwo" value="&#x1F" class="labelin"><span style="font-size: small;">1. </span>&#x1F492               
+                                    <input type="password" class="pwd" id="pwone" name="passwordone" minlength="3" maxlength="3" size="3"; required value="" placeholder="XXX" oninput="connectone(), cracklock()"/>
+                                </label>
+                                <label for="resultone">
+                                    <p id="resultone" class="result"></p>
+                                </label>
+                            </div>
+                            <div class="levelfour">
+                                <label class="text" for="pwtwo" id="apwt" value="&#x1F"><span style="font-size: small;">2. </span>&#x1F397            
+                                    <input type="password" class="pwd" id="pwtwo" name="passwordtwo" minlength="3" maxlength="3" size="3"; required value="" placeholder="XXX" oninput="connecttwo(), cracklock()"/> 
+                                </label>
+                                <label for="resulttwo">
+                                    <p id="resulttwo" class="result"></p>
+                                </label>
+                            </div>
+                            <div class="levelfour">
+                                <label class="text" for="pwthree" id="apwth" value="&#x1F"><span style="font-size: small;">3. </span>&#x1F535                   
+                                    <input type="password" class="pwd" id="pwthree" name="passwordthree" minlength="3" maxlength="3" size="3"; required value="" placeholder="XXX" oninput="connectthree(), cracklock()"/>                        
+                                </label>
+                                <label for="resultthree">
+                                    <p id="resultthree" class="result"></p>
+                                </label>
+            
+                            </div>
+                            <!-- <div class="levelfour">
+                                <label class="text" for="pwfour" id="apwf" value="&#x1F"><span style="font-size: small;">4. </span>&#x1F141                    
+                                    <input type="password" class="pwd" id="pwfour" name="passwordfour" minlength="3" maxlength="3" size="3"; required value="" placeholder="XXX" oninput="connectfour(), cracklock()"/>                  
+                                </label>
+                                <label for="resultfour">
+                                    <p id="resultfour" class="result"></p>
+                                </label>
+                            </div>                     -->
+                            </form> 
+                        </div>
+                    </div>
+                    </form>
+            </section>
+            <section name="part2" id="test" class="darkground">
+                <hr>
+            <section class="textfieldOne" style="text-align: center;">
+                <div id="Game-info-header" class="text">
+                    <h1>Bilderrätsel im Marburger Südviertel - Teil Zwei</h2>
+                    </div>
+                    <div id="Game-infotwo" class="text">    
+                        <p>Erhalte in dieser Etappe die Zielkoordinaten und trage dich in die Liste der "Motive-Quest-Master" ein. <br> Viel Spaß!</p>
+                    </div>            
+            </section>
+            <hr>
+            <section name="quest" id="questTwo">
+                <div id="modal02" class="modal" >
+                    <span class="close" onclick="document.getElementById('modal02').style.display='none'">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <div class="modal-content">
+                        <div id="captionone" style="max-width: 100%;"></div>                          
+                        <img id="img01" style="max-width:100%">
+                        <div id="qhead" style="max-width:100%"></div>
+                        <div id="captiontwo" style="max-width: 100%;"></div>                       
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild10.JPEG" style="max-width:100%;cursor:pointer"  class="modal-image" alt="Motiv 10">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Welcher Baum schmückt die Seiten der Straße, in der dieses Motiv zu finden ist?
+                                <br>[Notiere den verkürzten deutschen Namen (7 Buchstaben)]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)" >
+                        <img src="Bild11.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 11">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wie lautet die Telefonnummer der Störungsannahme?
+                                <br>[Notiere ohne Vorwahl: XXXXXX]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild12.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 12">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Die Einfahrt welchen Gebäudes befindet sich gegenüber des Motivs?
+                                <br>[Notiere die erste Zeile der offiziellen Anschrift]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)" >
+                        <img src="Bild13.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 13">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Welcher Professor der Uni Marburg lebte einst in diesem Haus? 
+                                <br>[Notiere den Namen]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild14.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 14">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest"> Wie viele Garagenstellplätze bietet das unmittelbar angrenzende Grundstück? 
+                                <br>[Notiere die Anzahl der Garagenstellplätze]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild15.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 15">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wie lautet die Quersumme der Hausnummer des Gebäudes, das auf diesem Motiv zu sehen ist? 
+                                <br>[Notiere die Quersumme]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild16.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 16">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Frage: Wie lautet der/die Vorname/n des Namensgebers der Straße, in der dieses Motiv zu finden ist? 
+                                <br>[Notiere den/dieVornamen]</p>
+                        </div>
+                    </div>
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild17.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 17">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest">Wie viele Blüten trägt das Fenstergitter neben diesem Tor? 
+                                <br>[Notiere die Anzahl]</p>
+                        </div>
+                    </div>    
+                    <div class="container1" onclick="onClick(this)">
+                        <img src="Bild18.JPEG" style="max-width:100%;cursor:pointer" class="modal-image" alt="Motiv 18">
+                        <div id="caption01" class="captions">
+                            <h4 class="headq">Frage:</h4>
+                            <p class="quest"> Welchem Beruf gehen die Ladenbetreiber in diesem Gebäude nach? 
+                                <br>[Notiere die Berufsbezeichnung]</p>
+                        </div>
+                    </div>   
+                </div>
+                <p style="font-size: small; text-align: center;"> Tippe oder klicke ein Motiv an, um die jeweilige Frage und Notizanweisung zu erhalten</p> 
+            </section>
+            <section class="hintsec">
+                <div>
+                    <button id="knopftwo" type="button" class="hint" label="Standorthinweis" onclick="hintnowtwo()" target="_self">Standort-<br>hinweis</a>
+                </div>                    
+                <div class="hintadd" id="hintaddtwo">
+                    <label for="locationhinttwo">Wähle ein Motiv aus:</label>
+                    <select id="locationhinttwo" name="locationhint" onchange="showHinttwo()">
+                        <option value="----"  selected hidden>----</option>
+                        <option value="Motiv 10">Motiv 10</option>
+                        <option value="Motiv 11">Motiv 11</option>
+                        <option value="Motiv 12">Motiv 12</option>
+                        <option value="Motiv 13">Motiv 13</option>
+                        <option value="Motiv 14">Motiv 14</option>
+                        <option value="Motiv 15">Motiv 15</option>                                
+                        <option value="Motiv 16">Motiv 16</option>
+                        <option value="Motiv 17">Motiv 17</option>
+                        <option value="Motiv 18">Motiv 18</option>
+                    </select>
+                </div>
+                <div class="actualhint" id="actualhinttwo">
+                    <p id="hinthinttwo">
+                    </p>
+                </div>
+            </section>
+        <hr>
+            <section>
+                <div id="moveon" class="textfieldOne">
+                    <p>
+                        Du hast alle Motive des zweiten Teils gefunden und alle Fragen beantwortet?
+                    </p>
+                    <a href="./formone.html" class="nextPage">Ja - ich bin Questmaster!</a>
+                </div>
+            </section>
+
+            </section>
+        </main>
+<hr>
+        <footer>
+            <section class="footerleft">
+                <label for="motivequest" class="footercont">
+                    <a href="index.html" id="motivequest"><u>MotiveQuest</u></a>
+                </label>
+                <label for="ueber" class="footercont">
+                    <a href="MotiveQuest.html" id="ueber"><u>Über</u></a>
+                </label> 
+            </section>
+            <section class="footermid">
+                <label for="imageSPL">
+                    <img src="images/icons/MQrand.ico" id="imageSPL" class="logo" alt="[SP Logo]">
+                </label>
+            </section>
+            <section class="footerleft">
+                <label for="impressu2m" class="footercont">
+                    <a href="Impressum.html" id="impressu2m"><u>Impressum</u></a>
+                </label>
+                <label for="datenschut2z" class="footercont">
+                    <a href="Datenschutz.html" id="datenschut2z"><u>Datenschutz</u></a>
+                </label>
+
+            </section>
+        </footer>
+    </body>
+</html>

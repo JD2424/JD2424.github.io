@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta viewport="width=device-width"; initialscale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>II-Liet-Lestearredlib</title>
+        <link rel="stylesheet" href="mqcss/mqstyles.css">
+        <script src="mqjs/mqscript.js"></script>            
+    </head>
+    <body>
+        <header>
+            <img src="MQLogo75.jpg">
+        </header>
+    <hr>
+        <main>
+            <section name="welcome" id="welcome2">
+                <div id="game-info-header2">
+                    <h1>Gib die ersten drei Buchstaben deiner Antwort auf Frage 18 ein.</h1>
+                </div>
+            </section>
+            <section id="precheck" class="textfieldOne">
+                <form class="questcheck">
+                    <label>
+                        <input type="text" id="questcheck" maxlength="3" minlength="3" placeholder="XXX" required oninput="qcheck()">
+                    </label>
+                </form>
+            </section>
+            <section id="check">
+                <div id="abschlussraetselteilzwei" class="textfieldTwo">
+                    <h3 style="text-align: center;">Abschlussrätsel <br> Teil 2</h3>
+                    <p>Übersetze nun alle Notizen wie im ersten Teil, gehe dazu wie folgt vor [ignoriere Antwort 18]:</p>
+                    <ol>
+                        <li>Kürze alle Vor- und Nachnamen die du notiert hast auf Ihre Anfangsbuchstaben.</li>
+                        <li>Ersetze jetzt alle Buchstaben in deinen Notizen mit ihrem Stellenwert im Alphabet (Bsp.: A=1, K=11, ...)</li>
+                        <li>Bilde nun die Quersumme aus allen in einer Antwort vorkommenden Zahlen. Sollte dein Ergebnis zweistellig sein, bilde die Quersumme aus deinem Ergebnis.</li>  
+                            <p> Beispiel:<br>1. Vorname, Nachname = V, N <br>
+                                2. V = 22, N = 14 <br>
+                                3. 22, 14 = <u>9</u></p>
+                    </ol>
+                    <p>- Gib deine Ergebnisse in das Formular ein und erhalte eine Nummer. 
+                    <br>- Der nachgestellte grüne Haken zeigt dir, ob deine Eingaben richtig sind. </p>
+                </div>
+                <div>
+                    <form class="mastercheck" >
+                        <label for="mcheck1">Lösung 1:
+                            <input type="tel" id="mcheck1" maxlength="1" size="1" required oninput="mcheck()" style="text-align: center; width: 2em;">
+                        </label>
+                        <label for="mcheck2">Lösung 2:
+                            <input type="tel" id="mcheck2" maxlength="1" required oninput="mcheck()" style="text-align: center; width: 2em;">
+                        </label>
+                        <label for="mcheck3">Lösung 3:
+                            <input type="tel" id="mcheck3" maxlength="1" required oninput="mcheck()" style="text-align: center; width: 2em;">
+                        </label>
+                        <div id="feedbackone">
+                            &#10060
+                        </div>
+                        <label for="mcheck4">Lösung 4:
+                            <input type="tel" id="mcheck4" maxlength="1" required oninput="mcheck()" style="text-align: center; width: 2em;">
+                        </label>
+                        <label for="mcheck5">Lösung 5:
+                            <input type="tel" id="mcheck5" maxlength="1" required oninput="mcheck()" style="text-align: center; width: 2em;">
+                        </label>
+                        <label for="mcheck6">Lösung 6:
+                            <input type="tel" id="mcheck6" maxlength="1" required oninput="mcheck()" style="text-align: center; width: 2em;">
+                        </label>
+                        <div id="feedbacktwo">
+                            &#10060
+                        </div>
+                        <label for="mcheck7">Lösung 7:
+                            <input type="tel" id="mcheck7" maxlength="1" required oninput="mcheck()" style="text-align: center; width: 2em;">
+                        </label>
+                        <label for="mcheck8">Lösung 8:
+                            <input type="tel" id="mcheck8" maxlength="1" required oninput="mcheck()" style="text-align: center; width: 2em;">
+                        </label>
+                        <div id="feedbackthree">
+                            &#10060
+                        </div>
+                        <div class="soldiv">
+                            <p>Wähle: 06421 - &nbsp; </p>
+                            <p type="text" id="resone" style="text-align: center"></p>&nbsp;
+                            <p type="text" id="restwo" style="text-align: center"></p>&nbsp;
+                            <p type="text" id="resthree" style="text-align: center"></p> 
+                            <!-- <p type="text" id="follow">"und folge den Anweisungen"<br> "der Bandansage."</p> -->
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    <hr>
+        <footer>
+            <section class="footerleft">
+                <label for="motivequest" class="footercont">
+                    <a href="index.html" id="motivequest"><u>MotiveQuest</u></a>
+                </label>
+                <label for="ueber" class="footercont">
+                    <a href="MotiveQuest.html" id="ueber"><u>Über</u></a>
+                </label>
+            </section>
+            <section class="footermid">
+                <label for="imageSPL">
+                    <img src="images/icons/MQrand.ico" id="imageSPL" class="logo" alt="[SP Logo]">
+                </label>
+            </section>
+            <section class="footerleft">
+                <label for="impressu2m" class="footercont">
+                    <a href="Impressum.html" id="impressu2m"><u>Impressum</u></a>
+                </label>
+                <label for="datenschut2z" class="footercont">
+                    <a href="Datenschutz.html" id="datenschut2z"><u>Datenschutz</u></a>
+                </label>
+            </section>
+        </footer>
+    </body>
+</html>

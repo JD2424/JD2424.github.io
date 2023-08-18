@@ -1,0 +1,17 @@
+{
+  "name": "MotiveQuest",
+  "short_name": "evitoMQest",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "display": "fullScreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "images/icons/MQrand.ico",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}
