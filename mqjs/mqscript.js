@@ -15,9 +15,9 @@ function hintnowone() {
 function hintnowtwo() {
     document.getElementById("hintaddtwo").style.display = "flex";    
 }
-const hints = ["Physiotheraphie im ...",
+const hints = ["Suche in der Nähe einer Zahnarztpraxis",
                     "Der Zweitname des Namensgebers der Straße lautet Friedrich", 
-                    "Suche einen Wasserspender",
+                    "Du suchst einen Wasserspender",
                     "Hausnummer 28",
                     "Wo hält man Mittagsschlaf?",
                     "Suche nach einem `großen` Parkplatz und sieh dich um!",
@@ -30,7 +30,7 @@ const hints = ["Physiotheraphie im ...",
                     "Suche in der Nähe von Motiv 3",
                     "Der Hinweis liegt im Bild",
                     "In unmittelbarer Näher eines Gotteshauses",
-                    "Noch konnte kein Motiv in dieser Straße gefunden werden",
+                    "Kein anderes Motiv kann in dieser Straße gefunden werden",
                     "In diesem Straßenabschnitt hat man einen guten Blick aufs Schloß",
                     "Suche im unteren linken Eck des Spielfeldes"]
     const choices = ["Motiv 1","Motiv 2","Motiv 3","Motiv 4","Motiv 5","Motiv 6",
