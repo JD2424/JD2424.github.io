@@ -505,7 +505,7 @@ footer{
     display:flex;
     flex-direction: column;
     margin: 2em;
-    padding: 0.5em;
+    padding: 1em;
     /* text-align:; */
     border-style: ridge;
     border-color: #008a00;
