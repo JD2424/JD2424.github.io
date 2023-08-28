@@ -118,7 +118,7 @@ h1{
 
 .modal-content {
     color: white;
-    font-size: x-large;
+    font-size: large;
     margin: auto;
     display: flex;
     flex-direction: column;
